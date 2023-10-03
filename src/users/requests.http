@@ -1,10 +1,29 @@
 ##Create new user
 
-POST http://localhost:3000/auth/signup
-content-type: application/json
+# POST http://localhost:3000/auth/signup
+# content-type: application/json
+
+# {
+#     "email": "asd@lalsa.com",
+#     "password": "sdsss"
+    
+# find a particular user with a given id
+
+# GET http://localhost:3000/auth/2
+
+## find all users with a given email
+
+# GET http://localhost:3000/auth?email=blabla@gmail.com
+
+# ##Delete a user given ID
+
+# DELETE http://localhost:3000/auth/1
+
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
 
 {
-    "email": "asd@lala.com",
-    "password": "sds"
-    
-}
+    "email": "blabla@gmail.com" 
+    }
+
+
